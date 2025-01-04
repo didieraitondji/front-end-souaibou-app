@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/output.css">
+    
 </head>
 
 <body>
-    <div class=" bg-blue">Bonjour tout le monde </div>
+    <?php include_once __DIR__ . "/includes/header.php"; ?>
+
+    <?php include_once __DIR__ . "/includes/footer.php"; ?>
 </body>
 
 </html>
