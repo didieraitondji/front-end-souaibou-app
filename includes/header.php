@@ -1,46 +1,22 @@
-<nav
-    id="nav-bar"
-    class="w-[90%] mx-auto font-poppins px-2 flex items-center justify-between h-full">
-    <a href="/" class="flex items-center">
-        <img
-            src="/assets/images/logo.png"
-            alt="SOUAÏBOU DIST"
-            class="w-[60px] p-2 rounded-full" />
-        <span class="font-bold text-blue text-2xl ml-3 border-b-8 border-blue">SOUAÏBOU DIST</span>
-    </a>
-
-    <ul class="md:hidden sm:hidden lg:flex gap-6 items-center">
-        <li class="relative mx-3">
-            <a href="/">Accueil </a>
-            <span
-                class="flex absolute h-0.5 w-full bg-gradient-to-r from-red-700 to-orange-500">
-            </span>
-        </li>
-        <li class="mx-3">
-            <a href="/catalogue/" class="font-bold"> Catalogue de Boissons </a>
-        </li>
-
-        <li class="mx-2 text-2xl text-blue" id="">
-            <a href="/profil/" title="Consulter Panier"><i class="fa-solid fa-cart-shopping"></i></i></a>
-        </li>
-        <li class="mx-2 text-3xl text-blue hidden" id="connecter">
-            <a href="/profil/" title="Consulter Profil"><i class="fa-regular fa-circle-user"></i></a>
-        </li>
-        <li class="mx-2" id="se_connecter">
-            <a
-                href="/login/"
-                class="rounded-md bg-green border border-green hover:bg-transparent hover:text-black py-2 px-4 text-white">Se connecter</a>
-        </li>
-        <li class="" id="creer_un_compte">
-            <a
-                href="/register/"
-                class="rounded-md bg-blue border border-blue hover:bg-transparent hover:text-black py-2 px-4 text-white">Créer un Compte</a>
-        </li>
-    </ul>
-
-    <div class="sm:flex md:flex lg:hidden mx-4">
-        <button id="hamberger" class="text-3xl" aria-label="Menu hamberger">
-            <i class="bx bx-menu text-black"></i>
-        </button>
-    </div>
-</nav>
+<div class="" style="position: fixed; top:0; left:0; right:0;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold" href="/">SOUAIBOU DISTRIBUTION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link about" href="/about/">à propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/store/">Boutique</a></li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Panier
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>

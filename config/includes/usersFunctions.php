@@ -26,10 +26,10 @@ function loginUser($body = null, $token = null, $method = 'POST'): array|false
 }
 
 // fonction pour déconnecter un utilisateur
-function logoutUser($body = null, $token = null, $method = 'POST'): array|false
+function logoutUser($id): array|false
 {
     global $logoutUserUrl;
-    $data = callApi($logoutUserUrl, $body, $method, $token);
+    $data = callApi($logoutUserUrl . "/" . $id);
 
     if ($data === false) {
         return false;
