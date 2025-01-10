@@ -1,4 +1,4 @@
-<div class="bg-light p-4 rounded-3">
+<div class="bg-light p-4 rounded-3" id="addpSection">
     <h2 class="mb-4">Ajouter un Nouveau Produit</h2>
     <hr>
     <form method="post" action="/admin/controls/addproduit.php" enctype="multipart/form-data">

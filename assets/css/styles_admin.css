@@ -12911,3 +12911,7 @@ body {
   color: #FFD700;
   font-weight: bold;
 }
+
+.subStyle {
+  color: orange;
+}

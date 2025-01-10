@@ -16,6 +16,11 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
         <link rel="stylesheet" href="/assets/css/styles_admin.css">
         <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <style>
+            .produits {
+                color: #FFD700;
+            }
+        </style>
     </head>
 
     <body class="sb-nav-fixed">
@@ -75,17 +80,6 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
                 }
             }
 
-
-            function confirmDeletion(event) {
-                event.preventDefault();
-
-                var userConfirmation = confirm("Êtes-vous sûr de vouloir supprimer cet élément ?");
-
-                if (userConfirmation) {
-                    window.location.href = event.currentTarget.href;
-                }
-            }
-
             document.getElementById('promotionEndDate').addEventListener('change', function() {
                 var startDate = document.getElementById('promotionStartDate').value;
                 var endDate = document.getElementById('promotionEndDate').value;
@@ -109,6 +103,13 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
                 } else {
                     document.getElementById('error-message').style.display = 'none';
                 }
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                applyStyleOnScroll("#addpSection", "#addpButton", "subStyle");
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+                applyStyleOnScroll("#listepSection", "#listepButton", "subStyle");
             });
         </script>
     </body>

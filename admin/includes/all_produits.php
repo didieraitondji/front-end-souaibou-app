@@ -1,4 +1,4 @@
-<div class="bg-light py-4 px-4 rounded-3">
+<div class="bg-light py-4 px-4 rounded-3" id="listepSection">
     <h2 class="mb-4">Tout les Produits</h2>
     <hr>
 

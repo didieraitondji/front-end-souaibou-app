@@ -1,26 +1,51 @@
-/*!
-    * Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
-    * Copyright 2013-2023 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
-    */
-    // 
-// Scripts
-// 
-
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Toggle the side navigation
-    const sidebarToggle = document.body.querySelector('#sidebarToggle');
-    if (sidebarToggle) {
-        // Uncomment Below to persist sidebar toggle between refreshes
-        // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
-        //     document.body.classList.toggle('sb-sidenav-toggled');
-        // }
-        sidebarToggle.addEventListener('click', event => {
-            event.preventDefault();
-            document.body.classList.toggle('sb-sidenav-toggled');
-            localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
-        });
-    }
-
+window.addEventListener("DOMContentLoaded", (event) => {
+  const sidebarToggle = document.body.querySelector("#sidebarToggle");
+  if (sidebarToggle) {
+    sidebarToggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      document.body.classList.toggle("sb-sidenav-toggled");
+      localStorage.setItem(
+        "sb|sidebar-toggle",
+        document.body.classList.contains("sb-sidenav-toggled")
+      );
+    });
+  }
 });
+
+function confirmDeletion(event) {
+  event.preventDefault();
+
+  var userConfirmation = confirm(
+    "Êtes-vous sûr de vouloir supprimer cet élément ?"
+  );
+
+  if (userConfirmation) {
+    window.location.href = event.currentTarget.href;
+  }
+}
+
+function applyStyleOnScroll(targetSelector, buttonSelector, styleClass) {
+  var targetElement = document.querySelector(targetSelector);
+  var buttonElement = document.querySelector(buttonSelector);
+
+  if (!targetElement || !buttonElement) {
+    console.error("Les sélecteurs fournis ne correspondent à aucun élément.");
+    return;
+  }
+
+  function checkVisibility() {
+    var targetPosition = targetElement.getBoundingClientRect();
+    var isVisible =
+      targetPosition.top >= 0 && targetPosition.bottom <= window.innerHeight;
+
+    if (isVisible) {
+      buttonElement.classList.add(styleClass);
+    } else {
+      buttonElement.classList.remove(styleClass);
+    }
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+
+  checkVisibility();
+}

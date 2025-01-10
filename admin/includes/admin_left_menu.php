@@ -13,25 +13,25 @@
 
                 <a class="nav-link collapsed" href="/admin/produits/" data-bs-toggle="collapse" data-bs-target="#collapseProduits" aria-expanded="false" aria-controls="collapseProduits">
                     <div class="sb-nav-link-icon"><i class="fa-brands fa-product-hunt"></i></div>
-                    Produits
+                    <span class="produits">Produits</span>
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="collapseProduits" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/admin/produits/#add">Ajouter</a>
-                        <a class="nav-link" href="/admin/produits/#liste">Liste</a>
+                        <a class="nav-link" href="/admin/produits/#add"><span id="addpButton">Ajouter</span></a>
+                        <a class="nav-link" href="/admin/produits/#liste"><span id="listepButton">Liste</span></a>
                     </nav>
                 </div>
 
                 <a class="nav-link collapsed" href="/admin/categories/" data-bs-toggle="collapse" data-bs-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Catégories
+                    <span class="categories"> Catégories </span>
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="collapseCategories" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/admin/categories/#add">Ajouter</a>
-                        <a class="nav-link" href="/admin/categories/#liste">Liste</a>
+                        <a class="nav-link" href="/admin/categories/#add"><span id="addcButton">Ajouter</span></a>
+                        <a class="nav-link" href="/admin/categories/#liste"><span id="listecButton">Liste</span></a>
                     </nav>
                 </div>
 
@@ -39,14 +39,14 @@
                 <div class="sb-sidenav-menu-heading">Gestion des Commandes</div>
                 <a class="nav-link collapsed" href="/admin/commandes/" data-bs-toggle="collapse" data-bs-target="#collapseCommandes" aria-expanded="false" aria-controls="collapseCommandes">
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-basket-shopping"></i></div>
-                    Commandes
+                    <span class="commandes">Commandes</span>
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="collapseCommandes" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/admin/commandes/">En cours</a>
-                        <a class="nav-link" href="/admin/commandes/">Historique</a>
-                        <a class="nav-link" href="/admin/commandes/">Statut</a>
+                        <a class="nav-link" href="/admin/commandes/"><span class="commandes">En cours</span></a>
+                        <a class="nav-link" href="/admin/commandes/"><span class="commandes">Historique</span></a>
+                        <a class="nav-link" href="/admin/commandes/"><span class="commandes">Statut</span></a>
                     </nav>
                 </div>
 
@@ -59,8 +59,8 @@
                 </a>
                 <div class="collapse" id="collapseLivraisons" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/admin/livraisons/">Editer</a>
-                        <a class="nav-link" href="/admin/livraisons/">Historique</a>
+                        <a class="nav-link" href="/admin/livraisons/"><span id="editerlButton">Editer</span></a>
+                        <a class="nav-link" href="/admin/livraisons/"><span id="historylButton">Historique</span></a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="/admin/livreurs/" data-bs-toggle="collapse" data-bs-target="#collapseLivreurs" aria-expanded="false" aria-controls="collapseLivreurs">
