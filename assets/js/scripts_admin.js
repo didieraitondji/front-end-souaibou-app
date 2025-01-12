@@ -24,6 +24,7 @@ function confirmDeletion(event) {
   }
 }
 
+/*
 function applyStyleOnScroll(targetSelector, buttonSelector, styleClass) {
   var targetElement = document.querySelector(targetSelector);
   var buttonElement = document.querySelector(buttonSelector);
@@ -49,3 +50,49 @@ function applyStyleOnScroll(targetSelector, buttonSelector, styleClass) {
 
   checkVisibility();
 }
+*/
+
+function applyStyleOnScroll(targetSelector, buttonSelector, styleClass) {
+  var targetElement = document.querySelector(targetSelector);
+  var buttonElement = document.querySelector(buttonSelector);
+
+  if (!targetElement || !buttonElement) {
+    console.error("Les sélecteurs fournis ne correspondent à aucun élément.");
+    return;
+  }
+
+  function checkVisibility() {
+    var targetPosition = targetElement.getBoundingClientRect();
+    var windowHeight = window.innerHeight;
+
+    // Vérification si une partie de l'élément est visible
+    var isVisible =
+      targetPosition.top < windowHeight && targetPosition.bottom > 0;
+
+    if (isVisible) {
+      buttonElement.classList.add(styleClass);
+    } else {
+      buttonElement.classList.remove(styleClass);
+    }
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); // Vérifier immédiatement lors du chargement
+}
+
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/*var myModal = document.getElementById("myModal");
+myModal.addEventListener("show.bs.modal", function (event) {
+  var button = event.relatedTarget;
+  var title = button.getAttribute("data-title");
+  var content = button.getAttribute("data-content");
+
+  var modalTitle = myModal.querySelector(".modal-title");
+  var modalBody = myModal.querySelector(".modal-body");
+
+  modalTitle.textContent = title;
+  modalBody.textContent = content;
+});*/

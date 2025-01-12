@@ -9,7 +9,7 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
     if ($televerser[0]) {
         $c_image = $televerser[1];
     } else {
-        $c_image = "/assets/images/defaultc.png";
+        $c_image = "/assets/images/defaultc.webp";
     }
 
     $body = [

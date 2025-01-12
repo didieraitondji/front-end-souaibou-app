@@ -25,3 +25,9 @@
 .about {
     text-transform: capitalize;
 }
+
+.connexion-creation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+}

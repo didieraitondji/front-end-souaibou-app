@@ -71,5 +71,4 @@
             </div>
         </div>
     </form>
-    <div id="liste"> </div>
 </div>

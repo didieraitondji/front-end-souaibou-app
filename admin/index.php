@@ -50,7 +50,7 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
                             <input type="password" id="password" name="password" class="form-control" placeholder="Mot de passe" required>
                         <?php } ?>
 
-                        <button type="button" class="btn btn-outline-secondary" onclick="togglePasswordVisibility()">Afficher</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="togglePasswordVisibility()"><i class="bi bi-eye-slash"></i></button>
                     </div>
                 </div>
                 <div>
@@ -76,10 +76,10 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
                 const passwordToggle = document.querySelector('.input-group button');
                 if (passwordField.type === 'password') {
                     passwordField.type = 'text';
-                    passwordToggle.textContent = 'Masquer';
+                    passwordToggle.innerHTML = '<i class="bi bi-eye"></i>';
                 } else {
                     passwordField.type = 'password';
-                    passwordToggle.textContent = 'Afficher';
+                    passwordToggle.innerHTML = '<i class="bi bi-eye-slash"></i>';
                 }
             }
         </script>
