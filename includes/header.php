@@ -12,6 +12,8 @@
                     <li class="nav-item"><a class="nav-link about" href="/about/">à propos</a></li>
                 </ul>
 
+                <!-- OMOTUNDE Kalala -->
+
                 <div class="d-flex">
                     <?php
                     if (isset($_SESSION['client_connect']) && $_SESSION['client_connect'] === 1) { ?>

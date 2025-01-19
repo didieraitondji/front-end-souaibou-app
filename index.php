@@ -29,6 +29,9 @@ session_start();
                 </div>
             </div>
         </header>
+        <marquee behavior="" direction="">
+            Vous êtes Un BAR, Une Buvette, Un Restaurant, etc., veuillez vous inscrire pour bénéficier de nos offres promotionnelles et autres avantages de partenariat
+        </marquee>
         <div class="produits">
             <section class="pt-2 pb-5">
                 <div class="container px-4 px-lg-5 mt-5">
