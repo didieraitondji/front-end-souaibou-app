@@ -7,7 +7,7 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
     $televerser = televerserImage('p_image');
     $p_image = "";
     if ($televerser[0]) {
-        $p_image = $televerser[1];
+        $p_image = $televerser[2];
     } else {
         $p_image = "/assets/images/default.png";
     }

@@ -12,6 +12,7 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
         $c_image = "/assets/images/defaultc.webp";
     }
 
+    $id = $_POST['id_categorie'];
     $body = [
         "id_users" => $_SESSION['user_data']['id_users'],
         "nom_categorie" => $_POST['nom_categorie'],
@@ -22,16 +23,16 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
     ];
 
     try {
-        $stock = addCategorie($body)['status'];
+        $stock = updateCategorie($id, $body)['status'];
         if ($stock == "success") {
-            $_SESSION['info'] = "Catégorie ajouter avec succès !";
+            $_SESSION['info'] = "Catégorie modifiée avec succès !";
             redirect("/admin/categories/#liste");
         } else {
-            $_SESSION['info'] = "Erreur lors de l'ajout de la catégorie !";
+            $_SESSION['info'] = "Erreur lors de la modification de la catégorie !";
             redirect("/admin/categories/#add");
         }
     } catch (Exception $e) {
-        $_SESSION['info'] = "Erreur lors de l'ajout la catégorie !";
+        $_SESSION['info'] = "Erreur lors de la modification de la catégorie !";
         redirect("/admin/categories/#liste");
     }
 } else {

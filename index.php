@@ -23,15 +23,19 @@ session_start();
             <div class="header-corps">
                 <div class="container px-4 px-lg-5 my-5">
                     <div class="text-center text-white">
-                        <h1 class="display-4 fw-bolder">La boisson qui vous trouve !</h1>
-                        <p class="lead fw-normal text-white-50 mb-0">Commandez, trinquez, savourez !</p>
+                        <h1 class="display-4 fw-bolder">De la boisson à la décoration, tout pour une fête parfaite !</h1>
+                        <p class="lead fw-normal text-white-50 mb-0">Boissons, matériel, traiteur... On s'occupe de tout !</p>
                     </div>
                 </div>
             </div>
         </header>
-        <marquee behavior="" direction="">
-            Vous êtes Un BAR, Une Buvette, Un Restaurant, etc., veuillez vous inscrire pour bénéficier de nos offres promotionnelles et autres avantages de partenariat
-        </marquee>
+
+        <div class="ccm mt-5">
+            <div>
+                comment ça marche
+            </div>
+        </div>
+
         <div class="produits">
             <section class="pt-2 pb-5">
                 <div class="container px-4 px-lg-5 mt-5">

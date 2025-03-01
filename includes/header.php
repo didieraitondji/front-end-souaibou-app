@@ -1,4 +1,13 @@
 <div class="" style="position: fixed; top:0; left:0; right:0;">
+    <?php
+    // Vérifier si l'utilisateur est sur l'accueil (ex: domaine.com/ ou domaine.com/index.php)
+    if ($_SERVER['REQUEST_URI'] == "/" || strpos($_SERVER['REQUEST_URI'], "index.php") !== false) {
+        echo '
+    <marquee behavior="scroll" direction="left" scrollamount="5" style="color: white; font-weight: bold; background:rgb(73, 55, 43); padding: 5px 20px;">
+        📢 Vous êtes un BAR, une Buvette, un Restaurant ? Inscrivez-vous pour profiter de nos offres promotionnelles et de nombreux avantages de partenariat ! 🎉
+    </marquee>';
+    }
+    ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand fw-bold" href="/">

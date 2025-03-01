@@ -51,7 +51,7 @@ function updateCategorie($id, $body): array|false
     if ($data === false) {
         return false;
     } else {
-        return $data["data"];
+        return $data;
     }
 }
 

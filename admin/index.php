@@ -15,6 +15,7 @@ if (isset($_SESSION['user_data']) && $_SESSION['user_data']['user_type'] == "adm
         <title>Admin | Connexion</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     </head>
 
     <body class="d-flex justify-content-center align-items-center vh-100 bg-light">

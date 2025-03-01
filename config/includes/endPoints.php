@@ -52,3 +52,10 @@ $getAllCategoriesUrl = $apiUrl . "/categories";
 $getCategorieUrl = $apiUrl . "/categorie"; // Ajoutez un ID spécifique à la fin lors de l'appel
 $updateCategorieUrl = $apiUrl . "/categorie";
 $deleteCategorieUrl = $apiUrl . "/categorie"; // Ajoutez un ID spécifique à la fin lors de l'appel
+
+// pour les Type de Produit
+$addTypeProduitUrl = $apiUrl . "/type_produit"; // Ajouter une catégorie.
+$getAllTypeProduitsUrl = $apiUrl . "/type_produits";
+$getTypeProduitUrl = $apiUrl . "/type_produit"; // Ajoutez un ID spécifique à la fin lors de l'appel
+$updateTypeProduitUrl = $apiUrl . "/type_produit";
+$deleteTypeProduitUrl = $apiUrl . "/type_produit"; // Ajoutez un ID spécifique à la fin lors de l'appel
